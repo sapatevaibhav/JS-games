@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#gameArea {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: #333;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+#player {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.zombie {
+    position: absolute;
+    background-color: red;
+
+}
+
+.bullet {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+#scoreBoard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#gameOverPrompt {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#gameOverText {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#restartText {
+    font-size: 18px;
+    color: #ccc;
+}
+
